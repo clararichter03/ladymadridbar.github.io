@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/overpass" rel="stylesheet">
+  <link rel="shortcut icon" href="/Logo final.jpg">
+  <link rel="stylesheet" href="./bar.css">
+  <title>Lady Madrid</title>
+</head>
+<body>
+  <div class="cont-menu">
+    <div class="respmenu">
+      <input type="checkbox">
+      <i class="bi bi-list"></i>
+      <i class="bi bi-x"></i>
+      <nav>
+        <ul>
+          <li><a href="./index.html"> Inicio</a></li>
+          <li><a href="./menu.html"> Menú</a></li>
+          <li><a href="./promos.html"> Promociones</a></li>
+          <li><a href="./ubicacion.html"> Ubicación</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <header>
+    <div class="caja-logo">
+      <img class="logo" src="./Logo final.jpg" alt="logo">
+    </div>
+  </header>
+  <main>
+    <h1>GRACIAS POR RESERVAR</h1>
+    <h2 id="mensaje" style="color:#000; font-size: 45px;"></h2>
+  </main>
+  <hr>
+  <footer>
+    <div class="footer">
+      <p><i class="bi bi-tropical-storm"> Materiales y procesos</i></p>
+      <p><i class="bi bi-bullseye"> Presented by: Clara Richter</i></p>
+    </div>
+    <hr>
+    <div class="footer2">
+      <h4 style="text-align: center;">Universidad de Palermo/0129011/Cátedra: Molinos/Lic. en diseño/ 2023.</h4>
+    </div>
+  </footer>
+  <script>
+    window.onload = function() {
+    // Obtener el valor del parámetro "nombre" de la URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var nombre = urlParams.get('nombre');
+    // Mostrar el mensaje personalizado en la página de agradecimiento
+    var mensaje = document.getElementById("mensaje");
+    mensaje.textContent = nombre;
+}
+</script>
+</body>
+</html>
